@@ -5,7 +5,7 @@ This repo is to provide some insight into the structure of what your first proje
 
 ### Project Goals
 
-*Your readme should include a clear project goal that reflect on what you are trying to achieve for the business/organization (in the scenario layed out). Your goal is never just to create an algorithm or model or to purely make discoveries in exploration...it includes the why. "My goal is to..., so that..." Your goal should be specific enough to know when you have reached it and concise enough to keep in 1-2 sentences. "My goal is to identify key drivers of churn, which customers at risk of churn, and make recommendations for changes so that we can reduce the monthly churn rate and increase customer retention." This helps tell you when you have reached a minimally viable product (including a presentation and predictions, in this example scenario). *
+*Your readme should include a clear project goal that reflect on what you are trying to achieve for the business/organization (in the scenario layed out). Your goal is never just to create an algorithm or model or to purely make discoveries in exploration...it includes the why. "My goal is to..., so that..." Your goal should be specific enough to know when you have reached it and concise enough to keep in 1-2 sentences. "My goal is to identify key drivers of churn, which customers at risk of churn, and make recommendations for changes so that we can reduce the monthly churn rate and increase customer retention." This helps tell you when you have reached a minimally viable product (including a presentation and predictions, in this example scenario).*
 
 ### Project Description
 
@@ -17,11 +17,11 @@ This repo is to provide some insight into the structure of what your first proje
 
 ### Data Dictionary
 
-*Your readme should include a data dictionary, which is important to provide in order to define and disambiguate each of the variables you are analyzing. *
+*Your readme should include a data dictionary, which is important to provide in order to define and disambiguate each of the variables you are analyzing.*
 
 ### Steps to Reproduce
 
-*Your readme should include useful and adequate instructions for reproducing your analysis and final report. *
+*Your readme should include useful and adequate instructions for reproducing your analysis and final report.*
 
 ### The Plan
 
@@ -31,11 +31,11 @@ This repo is to provide some insight into the structure of what your first proje
 
 ##### Modules (acquire.py + prepare.py)
 
-- *Module(s) with user-defined functions for acquiring and preparing the data should be created. *
+- *Module(s) with user-defined functions for acquiring and preparing the data should be created.*
 
-- *Each function contains a helpful docstring explaining what it does, its input(s) and output(s). *
+- *Each function contains a helpful docstring explaining what it does, its input(s) and output(s).*
 
-- *Credentials (such as in an env.py file) are NOT included in the public repo. *
+- *Credentials (such as in an env.py file) are NOT included in the public repo.*
 
 ##### Missing Values (report.ipynb)
 
@@ -63,51 +63,51 @@ This repo is to provide some insight into the structure of what your first proje
 
 ##### Ask a clear question, [discover], provide a clear answer (report.ipynb)
 
-- *At least 4 of the questions asked and answered of the data are shared in the final report notebook. *
+- *At least 4 of the questions asked and answered of the data are shared in the final report notebook.*
 
 - *You should call out questions of the data using natural language that speaks to the business stakeholders in markdown cells, ideally a header prior to the visualization or statistical test, that you then explore. This does not take the place of stating your null hypothesis/alternative hypothesis when doing a statistical test. But those hypotheses are generally for you. By writing questions that you intend to answer with visualizations and statistical tests in natural language, like ""Are office supplies leading to differences in profit in Texas?"", you are able to guide both yourself and your reader through the highlights of your analysis. You ask a question, create a visual, run a statistical test (if appropriate), and wrap it nicely with a markdown cell that contains a clear answer in layman's terms. You do all that before moving to the next question.*
 
 ##### Exploring through visualizations (report.ipynb)
 
-- *At least 5 visualations are included in your final report. *
+- *At least 5 visualations are included in your final report.*
 
-- *The ones included answer a question (remember, NO is an answer) or provide necessary context (such as the distribution of the target variable). All statistical tests included in the final report should be supported with an visualization of the interaction of the variables being tested. Charts in the final report should have titles and labels that are descriptive and useful for the end user/audience/consumer of the report. *
+- *The ones included answer a question (remember, NO is an answer) or provide necessary context (such as the distribution of the target variable). All statistical tests included in the final report should be supported with an visualization of the interaction of the variables being tested. Charts in the final report should have titles and labels that are descriptive and useful for the end user/audience/consumer of the report.*
 
-- *All visualizations in the final report are mentioned or discussed if a verbal presentation is given. *
+- *All visualizations in the final report are mentioned or discussed if a verbal presentation is given.*
 
 ##### Statistical tests (report.ipynb)
 
 - *At least 2 statistical tests are included in your final report.*
 
-- *The correct tests are run, given the data type and distribution, and the correct conclusions are drawn. For example (other tests may be used): *
+- *The correct tests are run, given the data type and distribution, and the correct conclusions are drawn. For example (other tests may be used):*
 
   - *correlation: 2 continuous variables, normally distributed, testing for LINEAR correlation only (H_0: Not linearly dependent)*
 
   - *independent t-test: 1 continuous, somewhat normally distributed variable, one boolean variable, equal variance, independent (H_0: population mean of each group is equal)*
   
-  - *chi-square test: 2 discrete variables. (H_0: the 2 variables are independent of each other). *
+  - *chi-square test: 2 discrete variables. (H_0: the 2 variables are independent of each other).*
 
 ##### Summary (report.ipynb)
 
-- *Following your exploration section, you summarize your analysis (in a **markdown** cell using natural language): what you found and how you will use it moving forward. *
+- *Following your exploration section, you summarize your analysis (in a **markdown** cell using natural language): what you found and how you will use it moving forward.*
 
-- *This includes **key takeaways** from all the questions answered in explore, a **list of which features** will be used in modeling and **why**, and which features will not move forward and why. You may only call out a few of these features in the presentation, but having that there for reference is important in a report. A group of features may have the same reason why, and those can be mentioned together. *
+- *This includes **key takeaways** from all the questions answered in explore, a **list of which features** will be used in modeling and **why**, and which features will not move forward and why. You may only call out a few of these features in the presentation, but having that there for reference is important in a report. A group of features may have the same reason why, and those can be mentioned together.*
 
 #### Modeling
 
 ##### Select Evaluation Metric (Report.ipynb)
 
-- *Clear communication as to how you evaluated and compared models. *
+- *Clear communication as to how you evaluated and compared models.*
 
 - *What metric(s) did you use and why? For example, in one case, you may decide to use precision over accuracy. If so, why? If you use multiple metrics, how will you decide which to select if metric is better for model A but another is better for model B? Will you rank them? Find a way to aggregate them into a single metric you can use to rank?*
 
 ##### Evaluate Baseline (Report.ipynb)
 
-- *Having a baseline tells you whether a model you build using the features you selected is any better than predicting by using only the target variable. One way a baseline is created in classification is by making predictions purely based on the most common outcome class, like predicting that all titanic passengers will die, becuase the majroity did die. By doing that, you end up with the highest accuracy without using extra information from features. The baseline is based on the training dataset. For a continuous target variable, the baseline  could be predicting that all salaries will be the median salary of our labeled train data. The predictions should be made on the training data using this information (like the predicted value, y_hat, for all passengers "survived" == 0) and then performance evaluated to measure your models against. If any model you build does not perform as well as a baseline that uses no features, then your features are not significant drivers of the outcome. *
+- *Having a baseline tells you whether a model you build using the features you selected is any better than predicting by using only the target variable. One way a baseline is created in classification is by making predictions purely based on the most common outcome class, like predicting that all titanic passengers will die, becuase the majroity did die. By doing that, you end up with the highest accuracy without using extra information from features. The baseline is based on the training dataset. For a continuous target variable, the baseline  could be predicting that all salaries will be the median salary of our labeled train data. The predictions should be made on the training data using this information (like the predicted value, y_hat, for all passengers "survived" == 0) and then performance evaluated to measure your models against. If any model you build does not perform as well as a baseline that uses no features, then your features are not significant drivers of the outcome.*
 
 ##### Develop 3 Models (Report.ipynb)
 
-- *The 3 models can differ based on the features used, the hyperparameters selected, and/or the algorithm used to fit the data. *
+- *The 3 models can differ based on the features used, the hyperparameters selected, and/or the algorithm used to fit the data.*
 
 #### Evaluate on Train (Report.ipynb)
 
@@ -151,7 +151,7 @@ This repo is to provide some insight into the structure of what your first proje
 
 ### intro (live)
 
-- *Speaker kicks of the presentation by introducing themselves and their project through a one-liner of what it's about. *
+- *Speaker kicks of the presentation by introducing themselves and their project through a one-liner of what it's about.*
 
 ### audience & setting  (live)
 
@@ -173,5 +173,5 @@ This repo is to provide some insight into the structure of what your first proje
 
 ### Deliver predictions (.csv) 
 
-*A csv with predictions made from the top model developed should be submitted, as per instructions in the project spec.
+*A csv with predictions made from the top model developed should be submitted, as per instructions in the project spec.*
 
