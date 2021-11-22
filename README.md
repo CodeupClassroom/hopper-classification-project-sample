@@ -7,6 +7,8 @@ This repo is to provide some insight into the structure of what your first proje
 
 *Your readme should include a clear project goal that reflect on what you are trying to achieve for the business/organization (in the scenario layed out). Your goal is never just to create an algorithm or model or to purely make discoveries in exploration...it includes the why. "My goal is to..., so that..." Your goal should be specific enough to know when you have reached it and concise enough to keep in 1-2 sentences. "My goal is to identify key drivers of churn, which customers at risk of churn, and make recommendations for changes so that we can reduce the monthly churn rate and increase customer retention." This helps tell you when you have reached a minimally viable product (including a presentation and predictions, in this example scenario).*
 
+For example: 
+
 The goal of this project is to identifty the attributes of passengers who survived the Titanic shipwreck in order to make receommendations of the best way to travel on a ship to maximize chance of survival should the ship run into a devastating end.
 
 ### Project Description
@@ -14,11 +16,15 @@ The goal of this project is to identifty the attributes of passengers who surviv
 *Your readme should include a project description that provides context for your project, including explaining why you are tackling this project, why it is important and how it could be of use to someone else beyond just the interest or new knowledge. It dives in a bit deeper than the goals. Project description and goals should always be in your words and specific to your project, not a copy of the class project spec.*
 *Here's the problem, here's how I want to address it, here's what I will deliver*
 
+For example: 
+
 The weather is getting more and more extreme and unpredictable. We often think of the Titanic is something in the past that won't happen again. However, these events could become more frequent with the change in the oceanic warming and atmospheric changes. We will analyze the attributes of passengers who were more or less likely to survive, develop a model for predicting survival based on those attributes, and leave with both recommendations for future passengers and predictions of survival for a list of passengers on the next ship leaving (delivered via csv). 
 
 ### Initial Questions
 
 *Your readme should include initial questions and focus you are going into the analysis with. This is an important part of project planning and gives context to the reader about where you started, what were your initial ideas and thoughts, and did those play out to be true.*
+
+For example: 
 
 Was the phrase "women and children first" just a myth or did they really try to get out women and children first? If so, they would show as more likely to survive. 
 
@@ -30,6 +36,9 @@ Do families with small children get priority access? Even if they at the bottom 
 
 *Your readme should include a data dictionary, which is important to provide in order to define and disambiguate each of the variables you are analyzing.*
 
+For example: 
+
+
 | Variable    | Meaning     |
 | ----------- | ----------- |
 | Survived    |             |
@@ -38,6 +47,8 @@ Do families with small children get priority access? Even if they at the bottom 
 ### Steps to Reproduce
 
 *Your readme should include useful and adequate instructions for reproducing your analysis and final report.*
+
+For example: 
 
 1. You will need an env.py file that contains the hostname, username and password of the mySQL database that contains the titanic_db.passengers table. Store that env file locally in the repository. 
 2. clone my repo (including the acquireTitanic.py and prepare.Titanic.py) (confirm .gitignore is hiding your env.py file)
@@ -58,11 +69,27 @@ Do families with small children get priority access? Even if they at the bottom 
 
 - *Credentials (such as in an env.py file) are NOT included in the public repo.*
 
+For example: 
+1. test acquire function
+2. add to acquire.py module
+3. write code to clean data in notebook
+4. merge code into a single function & test
+5. write code to split data in notebook
+6. merge code into a single function & test
+7. merge functions in a single function & test
+8. Add all 3 functions (or more) to prepare.py file
+9. import into notebook and test functions
+
 ##### Missing Values (report.ipynb)
 
 - *Decisions made and reasons are communicated and documented for handling missing values.*
 
 - *(later projects) If you imputed based on computing a value (such as mean, median, etc), that was done after splitting the data, and the value was derived from the training dataset only and then imputed into all 3 datasets. If you filled missing values with 0 or a constant not derived from existing values, that can be done prior to splitting the data.*
+
+For example: 
+
+1. handle missing values for age in a way to be able to keep what is there
+2. if there are columns > 70% missing then I will drop those columns. 
 
 ##### Data Split (prepare.py (def function), report.ipynb (run function))
 
@@ -74,11 +101,20 @@ Do families with small children get priority access? Even if they at the bottom 
 
 - *(later projects) In addition, imputers, scalers, feature elimination or selection algorithms should all be run after the split so that they are fit on train and transformed on validate and test.*
 
+For example: 
+
+1. Use function we have used in class, as that one seems to meet all the requirements. 
+
 ##### Using your modules (report.ipynb)
 
 - *After creating the wrangle module(s), you want to import those into your final report so that you can use those functions you wrote to acquire and prepare your data with ease, with little clutter, and with reduced risk of running into issues when reproducing the report.*
 
 - *The functions should be called to prepare your data (as opposed to re-writing the code of the functions in your notebook), and you should include in a markdown cell, the steps you took to prepare the data and why you made the decisions you did.*
+
+For example:
+
+1. once acquire.py and prepare.py are created and tested, import into final report notebook to be ready for use. 
+
 
 #### Explore
 
@@ -88,6 +124,21 @@ Do families with small children get priority access? Even if they at the bottom 
 
 - *You should call out questions of the data using natural language that speaks to the business stakeholders in markdown cells, ideally a header prior to the visualization or statistical test, that you then explore. This does not take the place of stating your null hypothesis/alternative hypothesis when doing a statistical test. But those hypotheses are generally for you. By writing questions that you intend to answer with visualizations and statistical tests in natural language, like ""Are office supplies leading to differences in profit in Texas?"", you are able to guide both yourself and your reader through the highlights of your analysis. You ask a question, create a visual, run a statistical test (if appropriate), and wrap it nicely with a markdown cell that contains a clear answer in layman's terms. You do all that before moving to the next question.*
 
+For example: 
+
+1. Was the phrase "women and children first" just a myth or did they really try to get out women and children first? If so, they would show as more likely to survive. 
+
+2. Do those who travel first class get quicker access to life boats? 
+
+3. Do families with small children get priority access? Even if they at the bottom of the boat in 3rd class? 
+
+4. Did traveling alone make a difference? Did it depend on sex? What was the survival rate for women traveling alone vs. men traveling along? 
+
+5. If families were more likely to be saved, is there a max family size where that benefit is lost? 
+
+4. Contextual questions: Did most people die or survive? How many men/women were on the boat? How many across different classes? 
+
+
 ##### Exploring through visualizations (report.ipynb)
 
 - *At least 5 visualations are included in your final report.*
@@ -95,6 +146,30 @@ Do families with small children get priority access? Even if they at the bottom 
 - *The ones included answer a question (remember, NO is an answer) or provide necessary context (such as the distribution of the target variable). All statistical tests included in the final report should be supported with an visualization of the interaction of the variables being tested. Charts in the final report should have titles and labels that are descriptive and useful for the end user/audience/consumer of the report.*
 
 - *All visualizations in the final report are mentioned or discussed if a verbal presentation is given.*
+
+For example: 
+
+1. Was the phrase "women and children first" just a myth or did they really try to get out women and children first? If so, they would show as more likely to survive. 
+
+  - are women more likely to survive? plot barplot x-axis is sex and y-axis is survival rate
+  - are children more likely to survive? bin age into 0-16, 17+, plot barplot on x-axis where y is survival rate (new variable = is_child)
+  - run chi-square test sex + survival
+  - run a chi-square test is_child + survival
+  - run a t-test on age and survived
+
+2. Do those who travel first class get quicker access to life boats? 
+
+  - 
+
+3. Do families with small children get priority access? Even if they at the bottom of the boat in 3rd class? 
+
+4. Did traveling alone make a difference? Did it depend on sex? What was the survival rate for women traveling alone vs. men traveling along? 
+
+5. If families were more likely to be saved, is there a max family size where that benefit is lost? 
+
+4. Contextual questions: Did most people die or survive? How many men/women were on the boat? How many across different classes? 
+  
+  - plot 3 subplots of proportions - pie/donut - survived, sex, class. 
 
 ##### Statistical tests (report.ipynb)
 
@@ -132,10 +207,10 @@ Do families with small children get priority access? Even if they at the bottom 
 
 #### Evaluate on Train (Report.ipynb)
 
-- *All models should be evaluated on train: the training smaple is our largest sample, and it is a sample of data we have to both fit the model AND see how the model performs. We should never skip straight to validate. We would be missing out on valuable observations.*
+- *All models should be evaluated on train: the training sample is our largest sample, and it is a sample of data we have to both fit the model AND see how the model performs. We should never skip straight to validate. We would be missing out on valuable observations.*
 
 ##### Evaluate on Validate (Report.ipynb)
-- 
+ 
 - *The top models should be evaluated with the validation sample dataset. It is important to use the validate sample for checking for any overfitting that may have occurred when fitting the model on train. If you are creating 10's of models, it is also important to only validate a handful of your top models with the Validate dataset. Otherwise, your data will have seen validate as much as train and you could accidentally introduce some implicit bias based on data and results you see while validating on so many models. *
 
 ##### Evaluate Top Model on Test (Report.ipynb)
