@@ -12,18 +12,37 @@ The goal of this project is to identifty the attributes of passengers who surviv
 ### Project Description
 
 *Your readme should include a project description that provides context for your project, including explaining why you are tackling this project, why it is important and how it could be of use to someone else beyond just the interest or new knowledge. It dives in a bit deeper than the goals. Project description and goals should always be in your words and specific to your project, not a copy of the class project spec.*
+*Here's the problem, here's how I want to address it, here's what I will deliver*
+
+The weather is getting more and more extreme and unpredictable. We often think of the Titanic is something in the past that won't happen again. However, these events could become more frequent with the change in the oceanic warming and atmospheric changes. We will analyze the attributes of passengers who were more or less likely to survive, develop a model for predicting survival based on those attributes, and leave with both recommendations for future passengers and predictions of survival for a list of passengers on the next ship leaving (delivered via csv). 
 
 ### Initial Questions
 
 *Your readme should include initial questions and focus you are going into the analysis with. This is an important part of project planning and gives context to the reader about where you started, what were your initial ideas and thoughts, and did those play out to be true.*
 
+Was the phrase "women and children first" just a myth or did they really try to get out women and children first? If so, they would show as more likely to survive. 
+
+Do those who travel first class get quicker access to life boats? 
+
+Do families with small children get priority access? Even if they at the bottom of the boat in 3rd class? 
+
 ### Data Dictionary
 
 *Your readme should include a data dictionary, which is important to provide in order to define and disambiguate each of the variables you are analyzing.*
 
+| Variable    | Meaning     |
+| ----------- | ----------- |
+| Survived    |             |
+|             |             |
+
 ### Steps to Reproduce
 
 *Your readme should include useful and adequate instructions for reproducing your analysis and final report.*
+
+1. You will need an env.py file that contains the hostname, username and password of the mySQL database that contains the titanic_db.passengers table. Store that env file locally in the repository. 
+2. clone my repo (including the acquireTitanic.py and prepare.Titanic.py) (confirm .gitignore is hiding your env.py file)
+3. libraries used are pandas, matplotlib, seaborn, numpy, sklearn. 
+4. you should be able to run survival_report. 
 
 ### The Plan
 
